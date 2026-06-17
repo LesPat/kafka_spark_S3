@@ -224,16 +224,3 @@ pytest tests/ -v
 ```
 
 Config tests catch common credential mistakes: missing keys, `.env.example` placeholders left in place, and temporary creds (`ASIA...`) without a session token.
-
-## Roadmap
-
-Planned improvements to make the pipeline more foolproof and production-like:
-
-- [x] Partitioned Parquet output (`event_date`, `device_type`)
-- [x] Bad-record filtering / dead-letter handling
-- [x] Graceful shutdown + progress logging
-- [ ] CI smoke checks
-
-Cloud query/catalog tooling (Athena, Glue) is intentionally out of scope to avoid extra AWS cost during local development.
-
-The synthetic producer will remain a **local input harness** — the focus is hardening the streaming path, not simulating a full IoT fleet.
