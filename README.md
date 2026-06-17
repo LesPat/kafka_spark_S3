@@ -66,7 +66,7 @@ kafka_IoT_synth_data/
 ### 1. Clone and install dependencies
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/LesPat/kafka_spark_S3
 cd kafka_IoT_synth_data
 python -m venv .venv
 source .venv/bin/activate
