@@ -1,0 +1,11 @@
+# Shared config (.env loading)
+python-dotenv==1.0.1
+
+# Producer (synthetic_data_generator.py)
+kafka-python==2.0.2
+
+# Streaming (spark_data_catcher.py) — version aligned with spark-sql-kafka JAR 3.5.3
+pyspark==3.5.3
+
+# Tests
+pytest==8.3.4

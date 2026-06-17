@@ -1,1 +1,6 @@
 /.vscode
+.env
+__pycache__/
+.venv/
+.venv_deps/
+logs/
